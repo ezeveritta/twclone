@@ -2,9 +2,7 @@
 
   <div class="v-home">
     
-    <div class="ff-bold-italic bgch-black">
-      holanga
-    </div>
+    .
 
   </div>
 
