@@ -109,7 +109,7 @@ src: local('assets/fonts/Segoe UI Bold Italic'), url('assets/fonts/Segoe UI Bold
 
 /* Color de fondo en :hover */
 .bgch-blue:hover { background-color: #1DA1F2!important }
-.bgch-light-blue { background-color: rgba(29, 161, 242, 0.1) }
+.bgch-light-blue:hover { background-color: rgba(29, 161, 242, 0.1) }
 .bgch-black:hover { background-color: #14171A!important }
 .bgch-dark-gray:hover { background-color: #657786!important }
 .bgch-light-gray:hover { background-color: #AAB8C2!important }

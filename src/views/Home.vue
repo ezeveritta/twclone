@@ -1,23 +1,58 @@
 <template>
 
-  <div class="v-home">
+  <b-row class="v-home"  no-gutters>
     
-    <div class="ff-bold-italic bgch-black">
-      holanga
-    </div>
+    <!-- Posts -->
+    <b-col class="home-content border-right">
 
-  </div>
+      <!-- Preferencia de contenido -->
+      <HomeFilter />
+
+      <!-- Nuevo Post -->
+      <NewPost />
+
+      <!-- Post List -->
+      <div class="Post-list mt-3 bg-white">
+        hola
+      </div>
+
+    </b-col>
+
+    <!-- Recomendaciones -->
+    <b-col cols="5">
+
+      <!-- Buscador -->
+      <div class="search">
+        <input type="text">
+      </div>
+
+      <!-- Explorar -->
+      <div>
+        hola
+      </div>
+
+    </b-col>
+
+  </b-row>
 
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import HomeFilter from '@/components/HomeFilter.vue'
+import NewPost from '@/components/NewPost.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    HomeFilter, NewPost
   }
 }
 </script>
+
+
+<style scoped>
+
+.home-content { background-color: #eee; }
+
+</style>
