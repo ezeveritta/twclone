@@ -1,53 +1,23 @@
 <template>
   <b-row class="v-home"  no-gutters>
     
-    <!-- Posts -->
+    <!-- Tweets -->
     <b-col class="home-content border-right">
 
       <!-- Preferencia de contenido -->
       <HomeFilter />
 
-      <!-- Nuevo Post -->
-      <NewPost />
+      <!-- Nuevo Tweet -->
+      <NewTweet />
       
       <div class="d-block w-100" style="height: 12px; background-color: #EEEEEE"></div>
 
-      <!-- Post List -->
-      <section class="Post-list px-3">
-
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at possimus quidem, 
-        esse molestias temporibus recusandae beatae laboriosam magnam impedit, architecto ea, laborum quasi. 
-        Quo consequatur optio inventore eligendi laboriosam!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at possimus quidem, 
-        esse molestias temporibus recusandae beatae laboriosam magnam impedit, architecto ea, laborum quasi. 
-        Quo consequatur optio inventore eligendi laboriosam!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at possimus quidem, 
-        esse molestias temporibus recusandae beatae laboriosam magnam impedit, architecto ea, laborum quasi. 
-        Quo consequatur optio inventore eligendi laboriosam!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at possimus quidem, 
-        esse molestias temporibus recusandae beatae laboriosam magnam impedit, architecto ea, laborum quasi. 
-        Quo consequatur optio inventore eligendi laboriosam!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at possimus quidem, 
-        esse molestias temporibus recusandae beatae laboriosam magnam impedit, architecto ea, laborum quasi. 
-        Quo consequatur optio inventore eligendi laboriosam!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at possimus quidem, 
-        esse molestias temporibus recusandae beatae laboriosam magnam impedit, architecto ea, laborum quasi. 
-        Quo consequatur optio inventore eligendi laboriosam!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at possimus quidem, 
-        esse molestias temporibus recusandae beatae laboriosam magnam impedit, architecto ea, laborum quasi. 
-        Quo consequatur optio inventore eligendi laboriosam!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at possimus quidem, 
-        esse molestias temporibus recusandae beatae laboriosam magnam impedit, architecto ea, laborum quasi. 
-        Quo consequatur optio inventore eligendi laboriosam!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at possimus quidem, 
-        esse molestias temporibus recusandae beatae laboriosam magnam impedit, architecto ea, laborum quasi. 
-        Quo consequatur optio inventore eligendi laboriosam!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at possimus quidem, 
-        esse molestias temporibus recusandae beatae laboriosam magnam impedit, architecto ea, laborum quasi. 
-        Quo consequatur optio inventore eligendi laboriosam!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at possimus quidem, 
-        esse molestias temporibus recusandae beatae laboriosam magnam impedit, architecto ea, laborum quasi. 
-        Quo consequatur optio inventore eligendi laboriosam!
+      <!-- Tweet List -->
+      <section class="Tweet-list">
+        
+        <Tweet />
+        
+        <Tweet />
 
       </section>
 
@@ -74,19 +44,19 @@
 
       </aside>
     </b-col>
-
   </b-row>
 </template>
 
 <script>
 // @ is an alias to /src
 import HomeFilter from '@/components/HomeFilter.vue'
-import NewPost from '@/components/NewPost.vue'
+import NewTweet from '@/components/NewTweet.vue'
+import Tweet from '@/components/Tweet.vue'
 
 export default {
   name: 'Home',
   components: {
-    HomeFilter, NewPost
+    HomeFilter, NewTweet, Tweet
   }
 }
 </script>
@@ -94,7 +64,6 @@ export default {
 
 <style scoped>
 
-.home-content {  }
 
 .search {z-index: 1; position: -webkit-sticky; position: sticky; top: 0px; background: #ccc; }
 .search > div { padding: 5px; background: #EEE; }

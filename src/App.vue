@@ -5,7 +5,7 @@
     - La primera es la columna que contiene la barra de navegación estática tanto en el sitio como en la posición de la página.
     - La segunda es la columna donde se muestran las vistas de cada página.
   -->
-  <b-container class="p-0" style="max-width: 100%!important;">
+  <b-container class="" style="max-width: 100%!important;">
     <b-row id="app" no-gutters>
 
       <!-- Sidebar - Navbar -->
@@ -117,6 +117,7 @@ src: local('assets/fonts/Segoe UI Bold Italic'), url('assets/fonts/Segoe UI Bold
 .bgch-blue:hover { background-color: #1DA1F2!important }
 .bgch-dark-blue:hover { background-color: #128bd6!important }
 .bgch-light-blue:hover { background-color: rgba(29, 161, 242, 0.1) }
+.bgch-light-green:hover { background-color: rgba(23, 191, 99, 0.1) }
 .bgch-black:hover { background-color: #14171A!important }
 .bgch-dark-gray:hover { background-color: #657786!important }
 .bgch-light-gray:hover { background-color: #AAB8C2!important }

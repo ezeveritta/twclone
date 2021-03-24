@@ -17,6 +17,7 @@
     <meta property="og:description" content="Clon de Twitter creado con VueJS & Bootstrap." />
     <!-- [END] Metas - Buenas prácticas -->
 
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -26,6 +27,11 @@
     </noscript>
 
     <div id="app"></div>
+
+    <script>
+      twemoji.parse(document.body);
+      console.log('haha');
+    </script>
     
   </body>
 
