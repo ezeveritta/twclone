@@ -1,10 +1,12 @@
 <template>
     <div class="HomeFilter border-bottom bg-white">
 
-        <div class="d-flex justify-content-between px-3 py-2">
-            <div class="filter-name ff-bold">
-                Inicio
-            </div>
+        <div class="d-flex justify-content-between p-3">
+
+            <header class="filter-name ff-bold h5 mb-0">
+                Tweets más recientes
+            </header>
+
             <div class="filter-button bgch-light rounded-circle">
                 <b-icon-search />
             </div>
@@ -21,8 +23,8 @@ export default ({
 </script>
 
 
-<style scoped>
+<style>
 
-.HomeFilter { position: relative; width: 100%; cursor: pointer }
+.HomeFilter { width: 100%; cursor: pointer; z-index: 1;  position: -webkit-sticky; position: sticky; top: 0px; }
 
 </style>

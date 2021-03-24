@@ -5,18 +5,24 @@
     - La primera es la columna que contiene la barra de navegación estática tanto en el sitio como en la posición de la página.
     - La segunda es la columna donde se muestran las vistas de cada página.
   -->
-  <b-container class="">
-  <b-row id="app" no-gutters>
+  <b-container class="p-0" style="max-width: 100%!important;">
+    <b-row id="app" no-gutters>
 
-    <b-col cols="3" class="border-right">
-      <Navbar id="navbar"/>
-    </b-col>
+      <!-- Sidebar - Navbar -->
+      <b-col cols="3" style="max-width: 313px">
+        <aside class="">
+          <Navbar id="navbar"/>
+        </aside>
+      </b-col>
 
-    <b-col>
-      <router-view />
-    </b-col>
-    
-  </b-row>
+      <!-- View - Content -->
+      <b-col>
+        <main class="border-left">
+          <router-view />
+        </main>
+      </b-col>
+      
+    </b-row>
   </b-container>
   
 </template>
@@ -118,6 +124,8 @@ src: local('assets/fonts/Segoe UI Bold Italic'), url('assets/fonts/Segoe UI Bold
 .bgch-white:hover { background-color: #F5F8FA!important }
 
 
+button:focus, button:active, button:hover
+input:focus, input:active, input:hover { box-shadow: none!important; outline: none!important; }
 
 /********************************************************************************************************
  * NAVBAR's POPOVER
@@ -127,6 +135,6 @@ src: local('assets/fonts/Segoe UI Bold Italic'), url('assets/fonts/Segoe UI Bold
 .popover * { border: none!important }
 
 
-
+.menu { position: fixed!important; height: 100%; width: 275px; left: 44px;}
 
 </style>

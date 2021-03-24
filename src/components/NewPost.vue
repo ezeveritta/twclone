@@ -1,25 +1,20 @@
 <template>
-    <div class="d-flex bg-white p-2">
+    <div class="d-flex px-3 py-2 border-bottom">
 
-        <b-avatar></b-avatar>
+        <b-avatar class="avatar"></b-avatar>
 
-        <div class="w-100 ml-2">
+        <div class="w-100 ml-3">
 
-            <div class="text">
-                <div class="w-100 h-auto" role="textarea" aria-multiline="true" contenteditable="true" style="outline: none; user-select: text; white-space: pre-wrap; overflow-wrap: break-word;">
-                    <a href="/asda"> asdasd </a>
+            <div class="text mt-2">
+                <div class="w-100 h-auto" role="textarea" aria-multiline="true" contenteditable="true">
+                    <a href="/asda">#asdasd</a> asdasd
                 </div>
-                <!-- TextArea antiguo, mientras pruebo un contenedor con contenteditable
-                <textarea class="w-100 border-0" style="height: 35px; rezisable: none" placeholder="¿Qué está pasando?">
-                    <a href="/asda"> asdasd </a>
-                </textarea>
-                -->
             </div>
 
-            <div class="Permitidos border-bottom pb-2">
+            <div class="Permitidos border-bottom pb-3 mt-3">
                 <b-button class="bgch-light-blue rounded-pill p-0" size="sm" variant="link">
-                    <b-icon-search scale="0.6" class="c-blue" />
-                    <small><small class="ml-1 c-blue ff-bold mr-2">Cualquier persona puede responder</small></small>
+                    <b-icon-slack scale="0.9" class="c-blue" />
+                    <span class="ml-2 c-blue ff-bold mr-2">Cualquier persona puede responder</span>
                 </b-button>
             </div>
 
@@ -66,6 +61,11 @@
 
 
 <style scoped>
+
+.avatar { width: 48px; height: 48px }
+
+.text > div { outline: none; user-select: text; white-space: pre-wrap; overflow-wrap: break-word; font-size: 20px; }
+.text a { color: #1DA1F2; }
 
 .Permitidos { margin-top: -4px }
 

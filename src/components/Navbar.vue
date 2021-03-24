@@ -8,68 +8,66 @@
                          parte inferior de la pantalla.
             - Height:    cambiar el tamaño del display en forma vertical, oculta algunos botones.
     -->
-    <b-navbar class="navbar">
+    <b-navbar class="menu navbar px-2 py-0">
         
-        <div to="/"  class="twitter-icon active-link">
-            <div class="btn rounded-circle" >
-                <b-icon-twitter class="c-blue twitter-svg" />
-            </div>
-        </div>
+        <b-link to="/" class="twitter-icon">
+            <b-icon-twitter scale=".6"  class="c-blue bgch-light-blue rounded-circle" />
+        </b-link>
         
-        <b-list-group class="list  mt-3">
+        <b-list-group class="list">
 
             <b-list-group-item to="/" active-class="active-link">
                 <div class="btn rounded-pill">
-                    <b-icon-house-door-fill />
+                    <b-icon-house-door-fill scale="1.25" />
                     Inicio
                 </div>
             </b-list-group-item>
 
             <b-list-group-item to="/explorar">
                 <div class="btn rounded-pill">
-                    <b-icon-hash />
+                    <b-icon-hash scale="1.25" />
                     Explorar
                 </div>
             </b-list-group-item>
 
             <b-list-group-item to="/notificaciones">
                 <div class="btn rounded-pill">
-                    <b-icon-bell />
+                    <b-icon-bell scale="1.25" />
                     Notificaciones
                 </div>
             </b-list-group-item>
 
             <b-list-group-item to="/mensajes">
                 <div class="btn rounded-pill">
-                    <b-icon-chat-dots />
+                    <b-icon-chat-dots scale="1.25" />
                     Mensajes
                 </div>
             </b-list-group-item>
 
             <b-list-group-item to="/guardados">
                 <div class="btn rounded-pill">
-                    <b-icon-bookmark />
+                    <b-icon-bookmark scale="1.25" />
                     Guardados
                 </div>
             </b-list-group-item>
 
             <b-list-group-item to="/listas">
                 <div class="btn rounded-pill">
-                    <b-icon-card-text />
+                    <b-icon-card-text scale="1.25" />
                     Listas
                 </div>
             </b-list-group-item>
 
             <b-list-group-item to="/perfil">
                 <div class="btn rounded-pill">
-                    <b-icon-person />
+                    <b-icon-person scale="1.25" />
                     Perfil
                 </div>
             </b-list-group-item>
 
             <b-list-group-item to="/">
                 <div class="btn rounded-pill">
-                    <b-icon-three-dots />
+                    <b-icon-three-dots scale="1.25" />
                     Más opciones
                 </div>
             </b-list-group-item>
@@ -77,13 +75,11 @@
         </b-list-group>
         
         
-        <div class="mt-3">
-            <b-button size="lg" class="w-100 bgc-blue p-2 rounded-pill button-simple">Twittear</b-button>
+        <div class="mt-2 mr-5">
+            <b-button size="lg" class="w-100 bgc-blue bgch-dark-blue p-2 rounded-pill">Twittear</b-button>
         </div>
 
-        <!-- 
-            Botón para elegir el usuario.
-        -->
+        <!-- [START] Botón para elegir el usuario. -->
         <b-button class="me d-flex justify-content-between rounded-pill p-2" id="popover-target-1">
             <ProfileSimple name="Ezequiel Vera" username="ezeveritta" avatar="https://pbs.twimg.com/profile_images/1363201646218665985/UlCcC7tE_200x200.jpg" />
             <b-icon-three-dots />
@@ -108,6 +104,8 @@
                 </b-list-group>
             </b-popover>
         </b-button>
+        <!-- [END] Botón para elegir el usuario. -->
+
     </b-navbar>
 </template>
 
@@ -122,25 +120,25 @@ export default {
 
 <style scoped>
 
-.navbar { display: block; width: 100%; height: 100vh; }
+.navbar { display: block; }
 .navbar * { border: none; }
 
-.twitter-icon div:hover { background: rgba(29, 161, 242, 0.1)!important }
+.twitter-icon { font-size: 3rem; }
+.twitter-icon svg { transform: translateY(-9px); }
 
-.navbar .list > * { margin-top: -10px; }
 .navbar .list div { font-size: 18px; font-family: 'segoeUI-bold'!important }
-.navbar .list a { padding: 4px 16px 14px 3px!important; }
+.navbar .list a > div { padding: 12px!important; }
+.navbar .list a { padding: 0px!important; }
 .navbar .list a:hover { background: transparent; }
 .navbar .list a:hover * { color: #1DA1F2!important; fill: #1DA1F2; }
 .navbar .list a:hover div { background: rgba(29, 161, 242, 0.1)!important }
-.navbar svg:not(.twitter-svg) { margin-right: 10px;}
+.navbar .list svg { margin-right: 12px;}
 
 .navbar .me { position: absolute; bottom: 8px; cursor: pointer; width: 90%; background: transparent; }
 .navbar .me:hover { background: rgba(29, 161, 242, 0.1);; }
 .navbar .me:focus { background: rgba(29, 161, 242, 0.2)!important;; }
 .navbar .me svg { font-size: 1.2rem; margin-top: 8px; }
 
-button:focus, button:active, button:hover { box-shadow: none!important; outline: none!important;; }
 
 .active-link * { color: #1DA1F2; fill: #1DA1F2; }
 
