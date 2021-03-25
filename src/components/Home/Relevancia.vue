@@ -1,5 +1,5 @@
 <template>
-    <div class="HomeFilter border-bottom bg-white">
+    <div class="Relevancia border-bottom bg-white">
 
         <div class="d-flex justify-content-between p-3">
 
@@ -18,13 +18,13 @@
 <script>
 
 export default ({
-    name: 'HomeFilter'
+    name: 'Relevancia'
 })
 </script>
 
 
 <style>
 
-.HomeFilter { width: 100%; cursor: pointer; z-index: 1;  position: -webkit-sticky; position: sticky; top: 0px; }
+.Relevancia { width: 100%; cursor: pointer; z-index: 1;  position: -webkit-sticky; position: sticky; top: 0px; }
 
 </style>

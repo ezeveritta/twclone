@@ -5,7 +5,7 @@
     <b-col class="home-content border-right">
 
       <!-- Preferencia de contenido -->
-      <HomeFilter />
+      <Relevancia />
 
       <!-- Nuevo Tweet -->
       <NewTweet />
@@ -28,17 +28,12 @@
       <aside>
 
         <!-- Buscador -->
-        <div class="search w-100 pl-4 pr-5 py-1 bg-white">
-          <div class="d-flex align-items-center rounded-pill">
-            <b-icon-search />
-            <b-input placeholder="Buscar en Twitter" />
-          </div>
-        </div>
+        <Buscador />
 
         <!-- Explorar -->
         <section>
 
-          hola
+          <Hashtags />
 
         </section>
 
@@ -49,14 +44,16 @@
 
 <script>
 // @ is an alias to /src
-import HomeFilter from '@/components/HomeFilter.vue'
-import NewTweet from '@/components/NewTweet.vue'
+import Relevancia from '@/components/Home/Relevancia.vue'
+import NewTweet from '@/components/Home/NewTweet.vue'
+import Buscador from '@/components/Home/Buscador.vue'
 import Tweet from '@/components/Tweet.vue'
+import Hashtags from '@/components/Hashtags.vue'
 
 export default {
   name: 'Home',
   components: {
-    HomeFilter, NewTweet, Tweet
+    Relevancia, NewTweet, Tweet, Hashtags, Buscador
   }
 }
 </script>
@@ -64,13 +61,4 @@ export default {
 
 <style scoped>
 
-
-.search {z-index: 1; position: -webkit-sticky; position: sticky; top: 0px; background: #ccc; }
-.search > div { padding: 5px; background: #EEE; }
-.search input { background-color: transparent!important; border: none;  }
-.search svg { margin-left: 14px; margin-top: 2px; fill: gray; }
-
-.search > div:hover { padding: 5px; background: #EEE; }
-.search > div:focus-within { box-shadow: 0 0 0 1px #1DA1F2; background: transparent; }
-.search > div:focus-within svg { fill: #1DA1F2; }
 </style>
